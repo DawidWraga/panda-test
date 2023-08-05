@@ -1,5 +1,4 @@
 import { css } from '@/styled-system/css';
-import { hstack } from '@/styled-system/patterns';
 
 export interface NewsletterSectionProps {}
 
