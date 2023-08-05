@@ -2,7 +2,12 @@ import { defineConfig } from '@pandacss/dev';
 import typographyPreset from 'pandacss-preset-typography';
 
 export default defineConfig({
-	presets: [typographyPreset(), 'pform-reset', '@pandacss/preset-panda'],
+	presets: [
+		typographyPreset(),
+		'pform-reset',
+		'@pandacss/preset-panda',
+		'@shadow-panda/preset',
+	],
 
 	// Whether to use css reset
 	preflight: true,
