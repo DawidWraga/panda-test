@@ -19,9 +19,6 @@ dependencies:
   next:
     specifier: 13.4.12
     version: 13.4.12(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
-  pform-reset:
-    specifier: ^0.0.2
-    version: 0.0.2
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -36,6 +33,12 @@ devDependencies:
   '@pandacss/dev':
     specifier: ^0.9.0
     version: 0.9.0(@internationalized/date@3.3.0)(@types/node@20.4.8)(@types/react-dom@18.2.7)(@types/react@18.2.18)(astro@2.10.1)(typescript@5.1.6)
+  pandacss-preset-typography:
+    specifier: ^0.0.10
+    version: 0.0.10(@pandacss/dev@0.9.0)
+  pform-reset:
+    specifier: ^0.0.2
+    version: 0.0.2
 
 packages:
 
@@ -4712,7 +4715,7 @@ packages:
   /mini-svg-data-uri@1.4.4:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
     hasBin: true
-    dev: false
+    dev: true
 
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -5024,6 +5027,14 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /pandacss-preset-typography@0.0.10(@pandacss/dev@0.9.0):
+    resolution: {integrity: sha512-qMsIO6V3VY8v6DYVBONo2yFz/j+KtszUj5sB1duMdqgzdeZo3EUwuSIgS2G6H/QN9gAE8qCfQqrBDd/BiubvlA==}
+    peerDependencies:
+      '@pandacss/dev': '>=0.0.1'
+    dependencies:
+      '@pandacss/dev': 0.9.0(@internationalized/date@3.3.0)(@types/node@20.4.8)(@types/react-dom@18.2.7)(@types/react@18.2.18)(astro@2.10.1)(typescript@5.1.6)
+    dev: true
+
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -5087,7 +5098,7 @@ packages:
     resolution: {integrity: sha512-pfGdezCUcJf8YCchYZlAEkPtyOT3K3QRgJQafeKTgzQpKZZd0XsmV84XUyFgH/GyzKimPoPZ6KwTf5YWOC7VDA==}
     dependencies:
       mini-svg-data-uri: 1.4.4
-    dev: false
+    dev: true
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}

@@ -1,7 +1,8 @@
 import { defineConfig } from '@pandacss/dev';
+import typographyPreset from 'pandacss-preset-typography';
 
 export default defineConfig({
-	presets: ['pform-reset', '@pandacss/preset-panda'],
+	presets: [typographyPreset(), 'pform-reset', '@pandacss/preset-panda'],
 
 	// Whether to use css reset
 	preflight: true,
@@ -23,8 +24,27 @@ export default defineConfig({
 	jsxFramework: 'react',
 
 	globalCss: {
-		body: {
-			bg: 'slate.800',
+		extend: {
+			body: {
+				bg: 'slate.800',
+			},
 		},
 	},
 });
+
+// ?pform-reset says this, ensure it will not break something:
+// Then make sure your globalCss and utilities are extendable, if you are using them in your config.
+// panda.config.*
+// export default defineConfig({
+//   //...
+//   utilities: {
+//     extend: {
+//       // ...
+//     },
+//   },
+//   globalCss: {
+//     extend: {
+//       // ...
+//     },
+//   },
+// })

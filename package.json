@@ -16,12 +16,13 @@
 		"eslint": "8.46.0",
 		"eslint-config-next": "13.4.12",
 		"next": "13.4.12",
-		"pform-reset": "^0.0.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"typescript": "5.1.6"
 	},
 	"devDependencies": {
-		"@pandacss/dev": "^0.9.0"
+		"@pandacss/dev": "^0.9.0",
+		"pandacss-preset-typography": "^0.0.10",
+		"pform-reset": "^0.0.2"
 	}
 }
