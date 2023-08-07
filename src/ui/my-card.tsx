@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { cx } from '@/styled-system/css';
 import {
 	card,
 	cardHeader,
@@ -7,7 +6,10 @@ import {
 	cardDescription,
 	cardContent,
 	cardFooter,
-} from '@/styled-system/recipes';
+} from './card.recipe';
+
+import { RecipeVariantProps, cva, cx } from '@/styled-system/css';
+import { styled } from '@/styled-system/jsx';
 
 const Card = React.forwardRef<
 	HTMLDivElement,

@@ -5,8 +5,8 @@ export default defineConfig({
 	presets: [
 		typographyPreset(),
 		'pform-reset',
-		'@pandacss/preset-panda',
 		'@shadow-panda/preset',
+		'@pandacss/preset-panda',
 	],
 
 	// Whether to use css reset
@@ -32,6 +32,7 @@ export default defineConfig({
 		extend: {
 			body: {
 				bg: 'slate.800',
+				h: '100vh',
 			},
 		},
 	},
